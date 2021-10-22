@@ -9,7 +9,7 @@ Page A
 
 <script type="text/javascript">
 
-document.cookie = "foo=bar; SameSite=Lax; Max-Age=10000000";
+document.cookie = "foo=bar; SameSite=None; Max-Age=10000000; Secure";
 
 var x = document.cookie;
 if (x.includes("bar")) {
