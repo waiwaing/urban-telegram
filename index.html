@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+Page A
+</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+document.cookie = "foo=bar";
+
+var x = document.cookie;
+if (x.contains("bar")) {
+  document.body.innderHTML += "Cookie written";
+}
+
+</script>
+
+</body>
+</html>
