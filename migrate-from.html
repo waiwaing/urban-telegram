@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+Page B
+</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+var target_domain = "http://localhost:5050";
+var message = {
+  "cookies": document.cookie
+};
+
+window.parent.postMessage(message, target_domain);
+document.body.innerHTML += "Message posted";
+
+</script>
+
+
+</html>
