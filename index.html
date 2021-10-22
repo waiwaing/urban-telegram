@@ -12,7 +12,7 @@ Page A
 document.cookie = "foo=bar";
 
 var x = document.cookie;
-if (x.contains("bar")) {
+if (x.includes("bar")) {
   document.body.innderHTML += "Cookie written";
 }
 
